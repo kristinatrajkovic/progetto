@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: #63768D;
+}
+
+main {
+    padding-top: 3rem;
+    background-color: #8AC6D0;
+}
+
+footer {
+    text-align: center;
+    background-color: #63768D;
+    padding: 2rem;
+}
+
+/* nav items */
+#page-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.125rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.btn {
+    margin: 0.15em 1em 0;
+    border: none;
+    padding: 1em 2.25em;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #554971;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+/* sections */
+.container {
+    display: flex;
+    padding: 2rem 5rem 5rem;
+    height: 75vh;
+    text-align: center;
+}
+
+.container img {
+    padding: 5rem;
+    width: 35%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container div {
+    width: 65%;
+}
+
+.container-text {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.subcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-right: 0.5px solid black;
+}
+
+.subcont div {
+    height: 50%;
+    width: 80%;
+    padding: 0;
+}
+
+.subcont img {
+    width: 200px;
+    padding: 0;
+}
+
+.cont-three {
+    display: flex;
+    padding: 2rem 5rem 5rem;
+    text-align: left;
+}
+
+.cont-three img {
+    height: 200px;
+    width: 200px;
+    padding: 0 5rem;
+}
+
+/* footer styling */
+.social-media-div {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon {
+    margin: 1rem;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1150px) {
+    body {
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subcont {
+        text-align: center;
+        border-right: none;
+        border-bottom: 0.5px solid black;
+        padding: 2rem;
+    }
+    .cont-three {
+        margin-top: 80%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #page-title {
+        margin-top: 25px;
+    }
+
+    #login-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 20px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .cont-three {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #laptop-img {
+        margin-top: 100px;
+        padding: 0;
+    }
+}
+
+/* form settings */
+#modal {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+    top: 30%;
+}
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
